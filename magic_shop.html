@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Gowun+Dodum&family=League+Gothic&family=Major+Mono+Display&family=Recursive:wght@300..1000&family=Sacramento&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Magic Shop</h1>
+      <nav>
+        <a class="menu" href="work.html">witch</a>
+        <a class="menu" href="contact.html">new</a>
+        <a class="menu" href="work.html">accessories</a>
+        <a class="menu" href="about.html">potions</a>
+        <a class="menu" href="contact.html">sale</a>
+      </nav>
+      <div class="flexconteiner">
+        <img src="../week5/accses.jpg" alt="accses" class="blur-image" />
+        <img src="../week5/kover.jpg" alt="kover" />
+        <img src="../week5/sapogi.jpg" alt="sapogi" />
+        <img src="../week5/strela.jpg" alt="strela" />
+        <img src="../week5/zeliya.jpg" alt="zeliya" />
+        <img src="../week5/zerkalo.jpeg" alt="zerkalo" />
+      </div>
+      <style>
+        h1 {
+          font-size: 80px;
+          font-family: Sacramento;
+          color: rgb(255, 247, 0);
+          margin-left: 550px;
+          font-weight: bold;
+          padding: 20px 0px;
+          line-height: 1;
+          text-decoration: none;
+          -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+        }
+        h1:hover {
+          color: #ff0000;
+        }
+        header {
+          background-image: url(../week5/oboi.jpg);
+        }
+        img {
+          width: 350px;
+          height: 350px;
+          border-radius: 50%;
+        }
+        .flexconteiner {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        .menu {
+          color: rgb(255, 247, 0);
+          font-family: Sacramento;
+          text-decoration: none;
+          font-size: 50px;
+          margin-left: 30px;
+          overflow: hidden;
+          transition: 1s;
+          display: block;
+        }
+        .menu:hover {
+          transform: scale(1.2);
+        }
+        .blur-image {
+          filter: blur(5px);
+          transition: 1s;
+        }
+        .blur-image:hover {
+          filter: blur(0);
+        }
+      </style>
+    </header>
+  </body>
+</html>
