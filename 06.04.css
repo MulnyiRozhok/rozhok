@@ -1,0 +1,329 @@
+
+.container {
+  display: grid;
+  width: 1350px;
+  height: 800px;
+  margin-left: 30px;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  gap: 1rem;
+  align-content: start;
+}
+
+.header {
+  display: grid;
+  background-image: url(../week6/imagine/Rectangle\ 1644.png);
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  height: 116px;
+}
+.knopka-1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  align-content: center;
+  margin-left: 90px;
+  height: 30px;
+  justify-content: center;
+}
+
+.knopka-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 30px;
+}
+
+button {
+  width: 90px;
+  height: 35px;
+  border-radius: 5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  background: rgb(2, 0, 35);
+  border-color: white;
+}
+.knopka-1 :hover {
+  color: black;
+  background: yellow;
+  transition: 0.2s;
+}
+.knopka-2 :hover {
+  color: black;
+  background: yellow;
+  transition: 0.2s;
+}
+.menu__inner {
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  margin-left: 200px;
+  padding: 0;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+}
+
+a {
+  position: relative;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav li a {
+  color: white;
+}
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fcfdfd;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+.nav li {
+  padding-left: 40px;
+}
+.logo {
+  display: flex;
+  width: 97px;
+  height: 67px;
+  margin-left: 40px;
+}
+.zzz{
+    position: absolute;
+    width: calc(var(--square-size) / 2);
+    height: calc(var(--square-size) / 2);
+    top: 250px;
+    left: 600px;
+    width: 50px;
+}
+
+.sidebar {
+  display: grid;
+  background-image: url(../week6/imagine/korea.png);
+  grid-row: 2 / 6;
+  grid-column: 5 / 8;
+  height: 520px;
+  width: 687px;
+  background-position: center;
+  background-size: 100%;
+}
+.osnova {
+  display: grid;
+  width: 700px;
+  height: 520px;
+  background-image: url(../week6/imagine/Rectangle\ 1644.png);
+  justify-content: space-around;
+}
+h1 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: 1em;
+  letter-spacing: 0.01em;
+  color: white;
+  margin-left: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+h2 {
+  display: grid;
+  font-size: 15px;
+
+  grid-row: 2 / 3;
+  grid-column: 1/ 3;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 20;
+  font-style: normal;
+  margin-left: 100px;
+}
+.content-1 {
+  display: grid;
+  grid-row: 8 / 8;
+  grid-column: 1/ 3;
+  width: 500px;
+  height: 150px;
+  margin-left: 15px;
+  justify-items: center;
+  align-items: center;
+  color: yellow;
+}
+
+.content-2 {
+  display: grid;
+  background-color: rgb(168, 124, 131);
+  width: 300px;
+  height: 50px;
+  grid-row: 6 / 6;
+  grid-column: 1/ 1;
+  margin-left: 100px;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+  background-image: url(../week6/imagine/Rectangle\ 1644.png);
+  width: 1350px;
+  height: 170px;
+  grid-row: 9 / 9;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.section-1 {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  width: 150px;
+  height: 50px;
+  grid-column: 1 / 2;
+  background-image: url(../week6/imagine/footer/Dropbox_logo_2017\ 1.png);
+  background-repeat: no-repeat;
+}
+.section-2 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  grid-column: 2 / 3;
+  background-image: url(../week6/imagine/footer/Frame\ 10.png);
+  background-repeat: no-repeat;
+}
+.section-3 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  grid-column: 3 / 4;
+  background-image: url(../week6/imagine/footer/Frame\ 38577.png);
+  background-repeat: no-repeat;
+}
+.section-4 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  grid-column: 4 / 5;
+  background-image: url(../week6/imagine/footer/Group.png);
+  background-repeat: no-repeat;
+}
+.section-5 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  grid-column: 5 / 6;
+  background-image: url(../week6/imagine/footer/Layer_2-2.png);
+  background-repeat: no-repeat;
+}
+.section-6 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  grid-column: 6 / 7;
+  background-image: url(../week6/imagine/footer/Layer_2.png);
+  background-repeat: no-repeat;
+}
+.sec-1 {
+  display: grid;
+  width: 100px;
+  height: 50px;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+}
+.sec-2 {
+  display: grid;
+  width: 100px;
+  height: 50px;
+  grid-column: 3/4;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+}
+.sec-3 {
+  display: grid;
+  width: 100px;
+  height: 50px;
+  grid-column: 5 / 6;
+  font-family: "Poppins", sans-serif;
+  justify-items: center;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+}
+.sec-4 {
+  display: grid;
+  width: 110px;
+  height: 50px;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.sec-5 {
+  display: grid;
+  width: 110px;
+  height: 50px;
+  grid-column: 3/4;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+.sec-6 {
+  display: grid;
+
+  width: 110px;
+  height: 50px;
+  grid-column: 5 / 6;
+  font-family: "Poppins", sans-serif;
+  justify-items: center;
+  font-weight: 50;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
