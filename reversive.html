@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <header class="header">header</header>
+      <div class="osnova">
+        основная часть
+        <div class="content-1">Content-1</div>
+        <div class="content-2">Content-2</div>
+        <div class="content-3">Content-3</div>
+      </div>
+      <aside class="sidebar">sidebar</aside>
+      <footer class="footer">
+        <div class="section-1">Секция 1</div>
+        <div class="section-2">секция 2</div>
+        <div class="section-3">секция 3</div>
+        <div class="section-4">секция 4</div>
+      </footer>
+    </div>
+    <style>
+      .Container {
+        border: 2px solid rgb(7, 145, 32);
+        display: grid;
+        width: 165vh;
+        height: 55vw;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        align-content: start;
+      }
+      .osnova {
+        display: grid;
+        width: 100vh;
+        height: 31vw;
+        grid-row: 2 / 6;
+        grid-column: 1 /2;
+        background: yellow;
+        justify-content: space-around;
+      }
+      .header {
+        display: grid;
+        background-color: rgb(199, 196, 196);
+        grid-row: 1 / 2;
+        grid-column: 1 / 8;
+        height: 10vw;
+        width: 165vh;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .sidebar {
+        display: grid;
+        background: rgb(90, 179, 139);
+        grid-row: 2 / 6;
+        grid-column: 2 /5;
+        height: 55vh;
+        width: 63vh;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .content-1 {
+        display: grid;
+        background-color: rgb(168, 124, 131);
+        grid-row: 8 / 8;
+        grid-column: 1/ 5;
+        width: 70vh;
+        height: 8vw;
+        margin-left: 15px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .content-2 {
+        display: grid;
+        background-color: rgb(168, 124, 131);
+        grid-row: 7 / 7;
+        grid-column: 1 / 2;
+        width: 24vh;
+        height: 8vw;
+        margin-left: 15px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .content-3 {
+        display: grid;
+        background-color: rgb(168, 124, 131);
+        grid-row: 7 / 7;
+        grid-column: 2 /3;
+        width: 24vh;
+        height: 8vw;
+        margin-right: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .footer {
+        display: grid;
+        background-color: rgb(199, 196, 196);
+        width: 165vh;
+        height: 13vw;
+        grid-row: 5 / 5;
+        grid-column: 1 /5;
+        align-content: center;
+        justify-content: space-evenly;
+      }
+      .section-1 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 20vh;
+        height: 10vw;
+        grid-column: 1 / 2;
+        background: white;
+      }
+      .section-2 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 20vh;
+        height: 10vw;
+        grid-column: 2 / 3;
+        background: white;
+      }
+      .section-3 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 20vh;
+        height: 10vw;
+        grid-column: 3 / 4;
+        background: white;
+      }
+      .section-4 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 20vh;
+        height: 10vw;
+        grid-column: 4 / 5;
+        background: white;
+      }
+    </style>
+  </body>
+</html>
