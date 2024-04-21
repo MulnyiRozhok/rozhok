@@ -1,0 +1,19 @@
+.container
+{
+    width: 80%;
+    height: 15em;
+    background-color: rgb(230, 230, 226);
+padding: 40px;
+margin-top: 20px;
+}
+.card{
+    width: 30vh;
+    height: 28vw;
+    margin-top: 20px;
+    
+}
+.row{
+    width: 84%;
+    margin-left: 130px;
+    
+}
